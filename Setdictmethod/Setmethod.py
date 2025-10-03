@@ -1,0 +1,21 @@
+print("---Add method: adds single element to the set, no action is taken if the element is already present in the set.---")
+set1={2,4,3,6}
+set1.add(1)
+print("Out put:", set1)
+print("---Remove method: removes the sepecified element from the set, raises key error if the given element is not found---")
+set1.remove(6)
+print(set1)
+print("---Discard: removes the specified element from the set, no action is taken if the given element is not found")
+set1.discard(1)
+print(set1)
+print("---Pop---")
+set2={"join","update","remove","add"}
+print("Original set: ",set2)
+poped_element=set2.pop()
+print("poped element is:",poped_element)
+print("o/p:",set2)
+print("---Clear---")
+set3={"animal",5,"plants",54,"true", 3.4}
+print("Original set: ", set3)
+set3.clear()
+print("output:", set3)
