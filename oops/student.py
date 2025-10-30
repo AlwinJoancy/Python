@@ -1,44 +1,50 @@
-class student:
-    Name = ""
-    Age = ""
-    Std = ""
-    Sectn = ""
-    Gender = ""
-    Address = ""
+class Student:
+    # Use camel case to declare variables
+    name = ""
+    age = ""
+    std = ""
+    sectn = ""
+    gender = ""
+    address = ""
 
-    def stu(self, Name):
-        print("Student Name", Name)
+    def setName(self, name):
+        # self.name - is called object refered name
+        # name - is an argument get from function/method
+        self.name=name
+        print("Student1 name: ", name)
 
-    def stdage(self, Age):
-        print("Student age: ", Age)
+    def setAge(self, age):
+        self.age=age
+        print("Student1 age: ", age)
 
 
-s1 = student()
-s1.Name = "AA"
-s1.Age = 20
-s1.Address = "Chennai"
-print(s1.Name, s1.Age, s1.Address)
+s1 = Student()
+s1.setName("AA")
+s1.setAge(20)
+s1.address = "Chennai"
+print("Student1 address:", s1.address)
 
-s2 = student()
-s2.Name = "BB"
-s2.Age = 22
-s2.Address = "Pondy"
-print(s2.Name, s2.Age, s2.Address)
 
-s3 = student()
-s3.Name = "CC"
-s3.Age = 15
-s3.Address = "Saram"
-print(s3.Name, s3.Age, s3.Address)
+s2 = Student()
+s2.name = "BB"
+s2.age = 22
+s2.address = "Pondy"
+print(s2.name, s2.age, s2.address)
 
-s4 = student()
-s4.Name = "DD"
-s4.Age = 16
-s4.Address = "Villupuram"
-print(s4.Name, s4.Age, s4.Address)
+s3 = Student()
+s3.name = "CC"
+s3.age = 15
+s3.address = "Saram"
+print(s3.name, s3.age, s3.address)
 
-s5 = student()
-s5.Name = "BB"
-s5.Age = 19
-s5.Address = "Cuddalore"
-print(s5.Name, s5.Age, s5.Address)
+s4 = Student()
+s4.name = "DD"
+s4.age = 16
+s4.address = "Villupuram"
+print(s4.name, s4.age, s4.address)
+
+s5 = Student()
+s5.name = "BB"
+s5.age = 19
+s5.address = "Cuddalore"
+print(s5.name, s5.age, s5.address)
