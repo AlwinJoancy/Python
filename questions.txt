@@ -1,0 +1,160 @@
+1. Banking System — Secure Transactions
+
+You are building a small banking application with two classes:
+
+BankAccount
+
+Transaction
+
+The BankAccount class should keep the account balance private and allow controlled access through deposit and withdraw methods.
+The Transaction class handles transaction details like transaction ID, type, and amount.
+
+Question:
+How would you use encapsulation to make sure that the balance cannot be directly changed from the Transaction class or outside code, and only valid transactions can modify it?
+
+2. Online Learning Platform
+
+Create two classes:
+
+Course
+
+Student
+
+Each Course has a course name, fee, and available seats that should not be directly changed by the student.
+Each Student has a name, email, and enrollment list.
+
+Question:
+How can encapsulation be used so that a student can only enroll in a course through a method that validates fee payment and seat availability, without directly changing internal attributes?
+
+3. Car Rental Service
+
+Design the following classes:
+
+Car
+
+Rental
+
+Customer
+
+The Car class should protect internal data like odometer reading and availability status.
+The Rental class manages the rental start and end times.
+The Customer class should only be able to rent a car through defined methods, not by directly changing the car’s status.
+
+Question:
+How can encapsulation ensure that car availability is only updated by authorized operations in the Rental class?
+
+4. E-Commerce System
+
+You have:
+
+Product
+
+Inventory
+
+Order
+
+Product contains details like price, stock quantity, and discount, which should not be directly edited by customers.
+Inventory manages product stock updates.
+Order handles purchases, which should safely decrease stock.
+
+Question:
+How would you encapsulate product and inventory data to prevent unauthorized stock or price modifications while allowing Order to interact safely?
+
+5. Hospital Management System
+
+Classes involved:
+
+Patient
+
+Doctor
+
+Appointment
+
+Patient stores personal information and medical history (which must remain private).
+Doctor can only access certain patient details.
+Appointment acts as a bridge between the two.
+
+Question:
+How can encapsulation ensure that only the Doctor class (through specific methods) can view or update limited patient details, and not modify sensitive data directly?
+
+6. Online Payment Gateway
+
+Classes:
+
+UserAccount
+
+PaymentProcessor
+
+The UserAccount class has a private balance and transaction history.
+PaymentProcessor manages fund transfers between users.
+
+Question:
+How would you use encapsulation so that only the PaymentProcessor class can modify account balances safely, preventing users from changing their own balance directly?
+
+7. Fitness Tracker Application
+
+Classes:
+
+User
+
+WorkoutSession
+
+FitnessTracker
+
+User holds personal details and health metrics like weight and BMI, which must be updated only through authorized methods.
+WorkoutSession records workouts and calories burned.
+FitnessTracker calculates health statistics.
+
+Question:
+How can encapsulation ensure that health metrics cannot be directly changed by users or external classes, but can be updated through secure internal processes?
+
+8. Library Management System
+
+Classes:
+
+Book
+
+LibraryMember
+
+LendingSystem
+
+Book maintains details like ISBN, availability, and borrow count.
+LibraryMember keeps track of borrowed books.
+LendingSystem manages checkouts and returns.
+
+Question:
+How can encapsulation be used so that book availability can’t be changed directly by a member, but only through the LendingSystem?
+
+9. Smart Home Automation
+
+Classes:
+
+Thermostat
+
+Room
+
+SmartHomeController
+
+Thermostat holds current temperature and target settings (restricted range).
+Room contains multiple thermostats.
+SmartHomeController manages all devices.
+
+Question:
+How would you apply encapsulation to ensure that the thermostat temperature can’t be set to unsafe levels, and can only be adjusted through controller-approved methods?
+
+10. Ride-Sharing Platform
+
+Classes:
+
+Driver
+
+Passenger
+
+Ride
+
+Driver has private data like license number, rating, and earnings.
+Passenger has ride history and wallet balance.
+Ride handles trip requests, distance, and payments.
+
+Question:
+How can encapsulation be used to protect sensitive data like driver earnings or passenger wallet balance, ensuring they are only modified through secure ride transactions?
